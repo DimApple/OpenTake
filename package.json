@@ -1,0 +1,29 @@
+{
+  "name": "opentake",
+  "version": "0.1.0-phase1",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node pwa.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "fake-indexeddb": "6.2.8",
+    "playwright-core": "1.65.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
+  }
+}
